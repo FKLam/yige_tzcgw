@@ -1,0 +1,86 @@
+<body>
+    <view class="container">
+        <view class="mjMax">
+            <view class="mjMaxTwo">
+                <view class="mjBody">
+                    <image class="bg" src="../../image/bg2.jpg"></image>
+                    <view class="mjRankingMax">
+                        <view class="mjRanking_1">
+                            <view catchtap="changeNav" class="box {{nav_index==0?'select':''}}" data-index="0">好友排行</view>
+                            <view catchtap="changeNav" class="box {{nav_index==1?'select':''}}" data-index="1">世界排行</view>
+                        </view>
+                        <view class="mjRanking_2  {{nav_index==0?'select':''}}">
+                            <view class="max">
+                                <scroll-view class="maxbox" hidden="" lowerThreshold="20" scrollY="1">
+                                    <view class="box clearfix" wx:for="{{rank_friend}}" wx:key="id">
+                                        <view class="minbox_1 {{index>2?'select':''}}">
+                                            <image class="img" src="../../image/icon_20.png" wx:if="{{index==0}}"></image>
+                                            <image class="img" src="../../image/icon_21.png" wx:if="{{index==1}}"></image>
+                                            <image class="img" src="../../image/icon_22.png" wx:if="{{index==2}}"></image>
+                                            <text wx:if="{{index>2}}">{{index+1}}</text>
+                                        </view>
+                                        <image class="minbox_2" src="{{item.avatarUrl}}"></image>
+                                        <view class="minbox_3">
+                                            <view class="min1 lineNum_1">{{item.nickName}}</view>
+                                            <view class="min2">
+                                                <image src="../../image/icon_2.png"></image>
+                                                <view>{{item.credit}}</view>
+                                            </view>
+                                        </view>
+                                        <view class="minbox_4">
+                                            <text>{{item.pass}}</text>首</view>
+                                    </view>
+                                </scroll-view>
+                            </view>
+                        </view>
+                        <view class="mjRanking_2 {{nav_index==1?'select':''}}">
+                            <view class="max">
+                                <scroll-view bindscrolltolower="loadMore" class="maxbox" lowerThreshold="20" scrollY="1">
+                                    <view class="box clearfix" wx:for="{{rank_word}}" wx:key="id">
+                                        <view class="minbox_1 {{index>2?'select':''}}">
+                                            <image class="img" src="../../image/icon_20.png" wx:if="{{index==0}}"></image>
+                                            <image class="img" src="../../image/icon_21.png" wx:if="{{index==1}}"></image>
+                                            <image class="img" src="../../image/icon_22.png" wx:if="{{index==2}}"></image>
+                                            <text wx:if="{{index>2}}">{{index+1}}</text>
+                                        </view>
+                                        <image class="minbox_2" src="{{item.avatarUrl}}"></image>
+                                        <view class="minbox_3">
+                                            <view class="min1 lineNum_1">{{item.nickName}}</view>
+                                            <view class="min2">
+                                                <image src="../../image/icon_2.png"></image>
+                                                <view>{{item.credit}}</view>
+                                            </view>
+                                        </view>
+                                        <view class="minbox_4">
+                                            <text>{{item.pass}}</text>首</view>
+                                    </view>
+                                </scroll-view>
+                            </view>
+                        </view>
+                        <view class="mjRanking_3 clearfix" wx:if="{{nav_index==0}}">
+                            <view class="min1 lineNum_1">{{user1.nickName}}</view>
+                            <view class="min2">{{user1.pass}} 题</view>
+                            <view class="min3">
+                                <view>{{user1.rank_friend}}</view>
+                                <view>我的排名</view>
+                            </view>
+                        </view>
+                        <view class="mjRanking_3 clearfix" wx:if="{{nav_index==1}}">
+                            <view class="min1 lineNum_1">{{user.nickName}}</view>
+                            <view class="min2">{{user.pass}} 题</view>
+                            <view class="min3">
+                                <view>{{user.rank_word}}</view>
+                                <view>我的排名</view>
+                            </view>
+                        </view>
+                        <view class="mjRanking_4" wx:if="{{info.review_version!=4}}">
+                            <view>炫耀我的排名</view>
+                            <image src="../../image/icon_2.png"></image>
+                            <button openType="share"></button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</body>

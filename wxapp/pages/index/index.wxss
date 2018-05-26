@@ -1,0 +1,158 @@
+.mjMax {
+    min-height: 100%;
+    position: relative;
+}
+
+.mjMaxTwo {
+    padding: 0 0 0 0;
+}
+
+.mjBody {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mjBody .bg {
+    width: 100%;
+    height: 100%;
+}
+
+.mjMore {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mjMore image {
+    width: 100%;
+}
+
+.mjMore button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    opacity: 0;
+}
+
+.mjMore .cancel {
+    width: 27rpx;
+    height: 27rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 31;
+}
+
+.mjIndexMax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 610rpx 0 0 0;
+}
+
+.mjIndexMax .start {
+    font-size: 30rpx;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #ff1c6c;
+    width: 400rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 200rpx;
+}
+
+.mjIndexMax .start2 {
+    margin-top: 40rpx;
+}
+
+.mjIndexMax .img {
+    width: 371rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    margin-top: 85rpx;
+}
+
+.mjIndexMax .nav {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 105rpx;
+}
+
+.mjIndexMax .nav .min {
+    display: inline-block;
+}
+
+.mjIndexMax .nav .minLine {
+    width: 2rpx;
+    height: 20rpx;
+    background-color: #fff;
+    margin: 0 10rpx;
+}
+
+.kf {
+    position: fixed;
+    right: 18px;
+    top: 7px;
+    margin: 0 auto;
+    font-size: 11px;
+    color: #e2807a;
+    width: 76px;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    z-index: 900;
+}
+
+.contactc {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #000000;
+    background-color: #F8F8F8;
+    margin: 0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background: none;
+    font-size: 12px;
+    padding: 0 7px 0 0;
+}
+
+.imgc {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: block;
+    border: none;
+    display: inline-block!important;
+    overflow: hidden;
+}

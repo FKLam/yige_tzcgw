@@ -1,0 +1,93 @@
+<body>
+    <view class="container">
+        <view class="mjMax">
+            <view class="mjMaxTwo">
+                <view class="mjBody">
+                    <image class="bg" src="{{bg1}}"></image>
+                    <scroll-view class="mjPlayMax" scrollY="">
+                        <view class="mjPlay_1">
+                            <view class="box">
+                第
+                <text> {{pass_num}} </text>首
+              </view>
+                        </view>
+                        <view catchtap="tip" class="mjPlay_2">
+                            <image src="../../image/icon_2.png"></image>
+                            <view>{{myScore}}</view>
+                            <image src="../../image/add.png" style="margin-right:-5rpx;margin-left:10rpx;width:50rpx;height:50rpx"></image>
+                        </view>
+                        <view class="mjPlay_3">
+                            <view catchtap="bindStart" class="box">
+                                <image class="cd {{curPlay?'select':''}}" src="{{cd}}"></image>
+                                <view>
+                                    <image class="play {{curPlay?'':'select'}}" src="../../image/icon_play.png"></image>
+                                    <image class="stop {{curPlay?'select':''}}" src="../../image/icon_pause.png"></image>
+                                </view>
+                                <image class="startOne" src="../../image/icon_5.png"></image>
+                                <image class="startTwo {{curPlay?'select':''}}" src="../../image/icon_6.png"></image>
+                            </view>
+                        </view>
+                        <form reportSubmit="">
+                            <view class="mjPlay_4">
+                                <view catchtap="bindTipTrue" class="box">
+                                    <image class="imgChange" src="../../image/icon_7.png"></image>
+                                    <view>提示</view>
+                                    <button formType="submit"></button>
+                                </view>
+                                <view class="box" wx:if="{{info.review_version!=4}}">
+                                    <image src="../../image/icon_8.png"></image>
+                                    <view>分享+30</view>
+                                    <button data-word="help" formType="submit" openType="share"></button>
+                                    <image class="imgChange" src="../../image/icon_10.png"></image>
+                                </view>
+                            </view>
+                        </form>
+                        <view class="mjPlay_5">
+                            <view catchtap="bindSelectOne" class="box" data-index="{{index}}" wx:for="{{listOne}}" wx:key="boxKey">
+                                <view class="text">{{item.text}}</view>
+                                <image src="../../image/icon_11.png"></image>
+                            </view>
+                            <view catchtap="bindRefresh" class="refresh">
+                                <image src="../../image/icon_13.png"></image>
+                            </view>
+                        </view>
+                        <view class="mjPlay_6">
+                            <view catchtap="bindSelectTwo" class="box" data-index="{{index}}" wx:for="{{listTwo}}" wx:key="boxKey">
+                                <block wx:if="{{!item.state}}">
+                                    <view class="text">{{item.text}}</view>
+                                    <image src="../../image/icon_12.png"></image>
+                                </block>
+                            </view>
+                        </view>
+                        <view catchtap="goMore" class="mjPlay_7" style="background-color:{{info.btn_color}}" wx:if="{{info.review_version!=4&&info.btn_color}}">更多好玩</view>
+                    </scroll-view>
+                </view>
+                <view class="mjFloat_1" wx:if="{{answerSuccess}}">
+                    <view class="box">
+                        <view class="main">
+                            <view class="min1">回答正确</view>
+                            <view class="min2">第
+                <text>{{pass_num}}</text>首</view>
+                            <view class="min3">{{list.right_answer}}</view>
+                            <view class="min4">
+                                <image src="../../image/icon_2.png"></image>
+                                <view>10</view>
+                            </view>
+                        </view>
+                        <view catchtap="bindAnswerSuccess" class="btn">下一题</view>
+                    </view>
+                    <image class="start_0" src="../../image/icon_14.png"></image>
+                    <image class="start_1" src="../../image/icon_14.png"></image>
+                    <image class="start_2" src="../../image/icon_14.png"></image>
+                    <image class="start_3" src="../../image/icon_14.png"></image>
+                    <image class="start_4" src="../../image/icon_14.png"></image>
+                    <image class="start_5" src="../../image/icon_14.png"></image>
+                    <image class="start_6" src="../../image/icon_14.png"></image>
+                    <image class="start_7" src="../../image/icon_14.png"></image>
+                    <image class="start_8" src="../../image/icon_14.png"></image>
+                </view>
+            </view>
+            <form reportSubmit=""></form>
+        </view>
+    </view>
+</body>

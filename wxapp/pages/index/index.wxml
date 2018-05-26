@@ -1,0 +1,23 @@
+<body>
+    <view class="container">
+        <view class="mjMax">
+            <view class="mjMaxTwo">
+                <view class="mjBody">
+                    <image class="bg" src="{{bg}}"></image>
+                    <view class="mjIndexMax" wx:if="{{info.btn_color}}">
+                        <navigator class="start" style="background-color:{{info.btn_color}}" url="../game/game">开始猜歌</navigator>
+                        <navigator class="start start2" style="background-color:{{info.btn_color}}" url="../rank/rank">排行榜</navigator>
+                        <navigator class="start start2" style="background-color:{{info.btn_color}}" url="../more/more" wx:if="{{info.review_version!=4}}">更多好玩</navigator>
+                        <view class="nav">
+                            <navigator class="min" url="../help/help" wx:if="{{info.review_version!=4}}">常见问题</navigator>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="kf">
+            <button class="contactc" openType="contact">联系我们</button>
+            <image class="imgc" src="../../img/contact.png"></image>
+        </view>
+    </view>
+</body>

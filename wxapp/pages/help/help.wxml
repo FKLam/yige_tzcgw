@@ -1,0 +1,23 @@
+<body>
+    <view class="container">
+        <view class="mjMax">
+            <view class="mjMaxTwo">
+                <view class="mjBody">
+                    <image class="bg" src="../../image/bg2.jpg"></image>
+                    <view class="mjProblemMax">
+                        <scroll-view class="mjProblem" scrollY="">
+                            <view class="title">如何获得音符?</view>
+                            <view class="about">猜对一首歌可以获得10个音符，求助和分享一次各可以获得30个音符！还可以花费少量费用购买音符！</view>
+                            <view class="title">怎么听不到声音?</view>
+                            <view class="about">遇到没有声音的情况，请检查下是否开启了静音按键。如果确定没有关闭声音，仍无法正常播放，尝试一下删除小程序，重新搜索进入，通关记录都会保留。</view>
+                            <view class="title">为什么有很多歌都没听过?</view>
+                            <view class="about">歌库中的歌曲都是从排行榜热门歌曲、经典歌曲中精选的，目前歌库也在不断更新中，如果有喜欢的歌手或歌曲欢迎你向我们推荐。</view>
+                            <view class="title">为什么好友排行榜内看不到好友?</view>
+                            <view class="about">在排行榜显示的好友是和你互动过的，比如你求助或者分享过的好友，TA帮助过你的。多和朋友互动，就可以看见更多好友的排名啦！</view>
+                        </scroll-view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</body>

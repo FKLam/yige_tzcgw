@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/game/game",
+        "pages/rank/rank",
+        "pages/help/help",
+        "pages/more/more"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#2a292f",
+        "navigationBarTextStyle": "#fff",
+        "backgroundColor": "#2a292f",
+        "backgroundTextStyle": "light"
+    }
+}

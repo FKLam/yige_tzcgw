@@ -1,0 +1,54 @@
+.mjMax {
+    min-height: 100%;
+    position: relative;
+}
+
+.mjMaxTwo {
+    padding: 0 0 0 0;
+}
+
+.mjBody {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mjBody .bg {
+    width: 100%;
+    height: 100%;
+}
+
+.mjProblemMax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.4);
+    margin: 30rpx;
+    padding: 0 30rpx;
+    border-radius: 8rpx;
+}
+
+.mjProblemMax .mjProblem {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.mjProblemMax .mjProblem .title {
+    color: #ffd220;
+    font-size: 30rpx;
+    padding: 30rpx 0 0 0;
+}
+
+.mjProblemMax .mjProblem .about {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    padding: 20rpx 0 20rpx 0;
+}
+
+.mjProblemMax .mjProblem .about:last-child {
+    padding-bottom: 30rpx;
+}

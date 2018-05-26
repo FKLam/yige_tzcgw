@@ -1,0 +1,18 @@
+<view>
+    <swiper autoplay="1" circular="1" currentItemId="" duration="1000" hidden="{{swiper.length==0}}" indicatorActiveColor="#fff" indicatorColor="rgba(255,255,255, .5)" indicatorDots="1" interval="5000" style="height:255rpx">
+        <swiper-item wx:for="{{swiper}}" wx:key="id">
+            <image catchtap="swiper_click" class="slide-image" data-index="{{index}}" mode="aspectFill" src="{{item.image}}" style="height:255rpx"></image>
+        </swiper-item>
+    </swiper>
+    <view catchtap="wxapp_click" class="recommend" data-index="{{index}}" wx:for="{{wxapp}}" wx:key="id">
+        <image class="logo" src="{{item.image}}"></image>
+        <view class="middle">
+            <view class="title">{{item.name}}
+          <image class="star" src="/image/star.png"></image>
+            </view>
+            <text class="description" selectable="">{{item.description}}</text>
+        </view>
+        <image class="arrow" src="/image/arrow_right.png"></image>
+    </view>
+</view>
+<view catchtap="callmobile" class="version" hidden="{{!info.copyright}}">{{info.copyright}}</view>
